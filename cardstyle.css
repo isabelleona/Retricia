@@ -43,16 +43,14 @@ hr{
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(17, 17, 17, 0.4);
 }
 
 .card img{
     width: 80%;
+    /* max-height: 25vh; */
 }
 
-.card p {
-    font-size: 18px;
-}
 
 .cardContainer:after {
     content: "";
@@ -67,7 +65,7 @@ hr{
     }
 
     body {
-        margin-right: 30px;
+        margin-right: 25px;
     }
 }
 
