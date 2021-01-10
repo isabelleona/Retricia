@@ -6,8 +6,11 @@
     <title>Snake Game</title>
 
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet" />
 
@@ -24,7 +27,7 @@
             font-family: 'Press Start 2P';
             background-color: black;
         }
-        
+
         body,
         html {
             height: 100vh;
@@ -39,11 +42,11 @@
     <nav class="navbar navbar-dark" style="background-color: black;">
         <div class="container-fluid">
             <span class="navbar-text" style="color: white; font-size: 36px;">
-          RETRICIA
-        </span>
+                RETRICIA
+            </span>
             <ul class="nav justify-content-end">
                 <li class="nav-item" style="color: red;">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                 </li>
                 <li class="nav-item" style="color: red;">
                     <a class="nav-link" href="snakes.html">Snakes</a>
@@ -94,7 +97,7 @@
             _grid: null,
 
 
-            init: function(d, c, r) {
+            init: function (d, c, r) {
                 this.width = c;
                 this.height = r;
 
@@ -108,12 +111,12 @@
             },
 
 
-            set: function(val, x, y) {
+            set: function (val, x, y) {
                 this._grid[x][y] = val;
             },
 
 
-            get: function(x, y) {
+            get: function (x, y) {
                 return this._grid[x][y];
             }
         }
@@ -126,7 +129,7 @@
             _queue: null,
 
 
-            init: function(d, x, y) {
+            init: function (d, x, y) {
                 this.direction = d;
 
                 this._queue = [];
@@ -134,7 +137,7 @@
             },
 
 
-            insert: function(x, y) {
+            insert: function (x, y) {
 
                 this._queue.unshift({
                     x: x,
@@ -144,7 +147,7 @@
             },
 
 
-            remove: function() {
+            remove: function () {
 
                 return this._queue.pop();
             }
@@ -185,10 +188,10 @@
             frames = 0;
             keystate = {};
 
-            document.addEventListener("keydown", function(evt) {
+            document.addEventListener("keydown", function (evt) {
                 keystate[evt.keyCode] = true;
             });
-            document.addEventListener("keyup", function(evt) {
+            document.addEventListener("keyup", function (evt) {
                 delete keystate[evt.keyCode];
             });
 
