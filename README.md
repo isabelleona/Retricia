@@ -3,6 +3,8 @@ A place to look for vintage games of our childhood. Look for shows we used to ha
 
 **Website Link** : https://retricia.netlify.app/
 
+**Additional Info** : This project was selected as [**First Overall**](https://devpost.com/software/retricia) in Snakes and Hackers hackathon by Major League Hacking.
+
 ![retricia](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/329/166/datas/gallery.jpg)
 
 ---
@@ -22,7 +24,7 @@ We used HMTL and CSS for the front-end part, and all the games are written only 
 
 ## Challenges I ran into
 
--When we started we didn't have a designer in our team, so we made a webpage without thinking design and ran into very bad layout. Later with help of one of the member, we overcome that problem.
+- When we started we didn't have a designer in our team, so we made a webpage without thinking design and ran into very bad layout. Later with help of one of the member, we overcome that problem.
 
 ## What I learned
 - How to work in a team project.
